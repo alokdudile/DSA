@@ -12,6 +12,7 @@ class Solution:
             x = int(x / 10)
             revnum = (revnum * 10) + lastdigit
         revnum *= sign
+        # -231 <= x <= 231 - 1 Constraints
         if revnum < -2**31 or revnum > 2**31 - 1:
             return 0
         return revnum 
